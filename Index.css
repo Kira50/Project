@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap');
+*:not(.wraper) {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: Lora, sans-serif;
+	min-width: 320px;
+}
+/* header */
+header {
+	background-color: #fff;
+	font-weight: 400;
+}
+.topmenu {
+	height: 80px;
+	display: flex;
+}
+.wraper {
+	width: 75px;
+	padding-top: 5px;
+}
+.menu {
+	
+}
+.bottomheader {
+	height: 200px;
+	background: #e0c8c8;
+	text-align: center;
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+}
+.Photo3 {
+	float: right;
+	height: 400px;
+	width: 200px;
+}
+.Photo1 {
+	float: left;
+	height: 330px;
+	width: 50px;
+}
+.textmain {
+	box-sizing: border-box;
+	width: 900px;
+	margin-left: 20%;
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+	padding-left: 20px;
+	
+}
+.textmain::selection { /* Этот прием изменяет цвет при выделении */
+    color: #ef135d; /* Цвет текста  */
+    background: #e0c8c8; /* Цвет фона */
+}
+h1::selection { /* Этот прием изменяет цвет при выделении */
+    color: #ef135d; /* Цвет текста  */
+    background: #e0c8c8; /* Цвет фона */
+}
+p::selection {
+    color: #ef135d; /* Цвет текста */
+    background: #e0c8c8; /* Цвет фона */
+}
