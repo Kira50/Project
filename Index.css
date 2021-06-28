@@ -12,21 +12,47 @@ header {
 	font-weight: 400;
 }
 .topmenu {
+	display: flex;
+}
+.wraper {
+	width: 90px;
+}
+.menu {
 	display: inline-block;
 	text-align: center;
 }
-.wraper {
-
+.menunav {
+	margin: 0 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
-.menu {
-	display:flex;
-	align-items: center;
+.menunav > span {
+	border: 1px solid #714957;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+	border-radius: 10px;
+    margin-right: 10px;
+	color: #714957;
+	text-decoration: none;
+}
+.menunav > a {
+	text-decoration: none; /* не работает  */
+}
+.menunav a:hover {
+	text-decoration: none;
+	background: #714957;
+	color: #fff;
+	border-radius: 10px;
 }
 .bottomheader {
-	height: 200px;
 	background: #e0c8c8;
 	text-align: center;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+}
+.regalii {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 main {
 	background-image: url("images/KletcaRak.jpeg");
@@ -36,20 +62,20 @@ main {
 }
 .Photo3 {
 	float: right;
-	height: 400px;
-	width: 200px;
-	padding-top: 5px
+	width: 50%;
+	padding-top: 5px;
+	padding-right: 5px;
 }
 .Photo1 {
 	float: left;
-	height: 330px;
-	width: 50px;
-	padding-right: 5px;s
+	width: 50%;
+	padding-top: 10px;
+	padding-right: 15px;
 }
 .textmain {
 	box-sizing: border-box;
 	width: 900px;
-	margin-left: 20%;
+	margin-left: 20%; /*  */
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
 	padding: 20px 20px;
 	position: relative;
@@ -73,5 +99,44 @@ p::selection {
     background: #e0c8c8; /* Цвет фона */
 }
 footer {
+	background-color: #714957;
 	
+}
+.footerinfa {
+	display: flex;
+	justify-content: space-between;
+}
+.bottomfooter {
+	padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footermenu {
+	display: grid;
+	padding-top: 20px;
+	text-align: center;
+}
+.footermenu > a {
+	text-decoration: none;
+	color: #fff;
+}
+.footermenu > a:hover {
+	color: #e0c8c8;
+}
+.topfooter {
+	padding-top: 20px;
+	text-align: center;
+}
+.topfooter > a{
+	text-decoration: none;
+	color: #fff;
+} 
+h3 {
+	border-bottom: 1px solid #383636;
+	color: #383636;
+	text-align: center;
+	padding-right: 20px;
+}
+.galery {
+	height: 20%;
 }
