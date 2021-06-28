@@ -22,10 +22,8 @@ header {
 .menu {
 	
 }
-.KletcaRak {
-	height: 150%;
-	width: 100%;
-	position: absolute;
+main {
+	background-image: url("KletcaRak.jpeg");
 }
 .bottomheader {
 	height: 200px;
@@ -53,6 +51,11 @@ header {
 	padding-left: 20px;
 	position: relative;
     background: #fff;
+}
+.map {
+	width: 900px;
+	height: 480px;
+	padding-left: 213px;
 }
 .textmain::selection { /* Этот прием изменяет цвет при выделении */
     color: #ef135d; /* Цвет текста  */
