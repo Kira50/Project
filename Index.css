@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap');
-*:not(.wraper) {
+body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -18,14 +18,18 @@ header {
 
 }
 .menu {
-	display: inline-block;
 	text-align: center;
+	width: 100%;
+	flex: 1 1 auto;
 }
 .menunav {
 	margin: 0 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
 	padding-top: 10px;
+	width: 100%;
+	font-family: Lora, sans-serif;
+	min-width: 320px;
 }
 .menunav > span {
 	border: 1px solid #714957;
@@ -75,7 +79,7 @@ main {
 .textmain {
 	box-sizing: border-box;
 	width: 900px;
-	margin-left: 20%; /*  */
+	margin: 0 auto;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
 	padding: 20px 20px;
 	position: relative;
