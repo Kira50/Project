@@ -20,7 +20,7 @@ header {
 .menu {
 	text-align: center;
 	width: 100%;
-	flex: 1 1 auto;
+	flex: 1 1 auto; 
 }
 .menunav {
 	margin: 0 10px;
