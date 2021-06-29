@@ -15,7 +15,7 @@ header {
 	display: flex;
 }
 .wraper {
-	width: 90px;
+
 }
 .menu {
 	display: inline-block;
@@ -123,9 +123,13 @@ footer {
 .footermenu > a:hover {
 	color: #e0c8c8;
 }
+.topfooter > a:hover {
+	color: #e0c8c8;
+}
 .topfooter {
 	padding-top: 20px;
 	text-align: center;
+	display: grid;
 }
 .topfooter > a{
 	text-decoration: none;
