@@ -16,6 +16,12 @@ header {
 img {
 	height: 100px;
 	padding-left: 10px;
+	border: 1px solid transparent;
+}
+img:hover {
+	cursor: pointer;
+	height: 103px;
+	margin-bottom: -3px;
 }
 #yourcity {
 	float: right;
@@ -23,6 +29,19 @@ img {
 #yourcity > p {
 	display: none;
 	position: absolute;
+}
+#yourcity > p:hover {
+	display: block;
+}
+.div-popup > button {
+	background-color: #e0c8c8;
+	color: #fff;
+	border-color: #fff;
+}
+.div-popup > button:hover {
+	background-color: #fff;
+	color: #e0c8c8;
+	border-color: #e0c8c8;
 }
 .midlheader {
 	text-align: center;
@@ -61,7 +80,7 @@ img {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	height: 150px;
+	height: 150px;/* при уменьшении ширины экрана эта висота заходит под следующий блок */
 }
 #pre {
 	color: #000;
