@@ -16,4 +16,5 @@ $(document).ready(function() {
 	
 	$('#pre').text( greeting );
 	$('#pre').fadeIn(5000);
+	$('#privet').click(function() {alert('Привет!')});
 });
