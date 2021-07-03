@@ -9,17 +9,20 @@
 	<script src="javascript/index.js"></script>
 </head>
 <body>
+	<div id="popup">
+        <p>Ваш город: Москва?</p>
+        <button type="button" class="btn-yes" id="sity">Да</button>
+        <button type="button" class="btn-no">Нет</button>
+    </div>
+	<div id="prompt">
+		<p>Введите Ваш город!</p>
+		<input type="text" id="text">
+		<button type="button" id="prompt-ok">OK</button>
+	</div>
 	<header>
 		<div class="topheader">
 			<img src="images/logo.png" id="privet">
-			<div id="yourcity">
-                <p >Ваш город: Москва</p>
-                <div class="div-popup">
-                    <span>Ваш город: Москва?</span>
-                    <button type="button" class="btn-yes" id="sity">Да</button>
-                    <button type="button" class="btn-no">Нет</button>
-                </div>
-            </div>
+            <p id="city">Ваш город:</p>
 		</div>
 		<div class="midlheader">
 			<a href="index.html" target="_blank">Главная</a>
@@ -57,18 +60,32 @@
 				качественную жизнь своему питомцу!
 				При возникновении вопросов, вы можете задать вопрос или записаться
 				на прием
-				
-				qwerty qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwerty
-				qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwerty
-				qwertyqwertyqwertyqwertyqwertyqwertyqwerty
-				qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwerty
-				qwertyqwertyqwertyqwerty
-								qwerty qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwerty
-				qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwerty
-				qwertyqwertyqwertyqwertyqwertyqwertyqwerty
-				qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwerty
-				qwertyqwertyqwertyqwerty
 			</p>
+			<div class="container">
+				<div class="slider">
+					<div class="slide">
+						<a href="#">
+							<img src="images/cat1.jpg" alt="images/cat1.jpg">
+						</a>
+					</div>
+					<div class="slide">
+						<img src="images/dog2.jpg" alt="images/cat2.jpg">
+					</div>
+					<div class="slide">
+						<img src="images/cat3.jpg" alt="images/cat3.jpg">
+					</div>
+					<div class="slide">
+						<img src="images/dog4.jpg" alt="images/cat5.jpg">
+					</div>
+					<div class="slide">
+						<img src="images/dog5.jpg" alt="images/cat5.jpg">
+					</div>
+					<div class="rule">
+						<span class="left"><</span>
+						<span class="right">></span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -92,11 +109,13 @@
 			</div>
 			<div class="contacts">
 				<div class="tel">+7 (495) 798-53-58</div>
-				<div class="mail">dr.melikova@list.ru</div>
+				<div class="mail">
+					<a href="mailto:dr.melikova@list.ru">dr.melikova@list.ru</a>
+				</div>
 				<div>
 					<a href="https://www.instagram.com/melikovayuliya/?hl=ru" target="_blank"><img src="images/instagram.png" /></a>
 					<a href="https://vk.com/id81751044" target="_blank"><img src="images/vk.png" /></a>
-					<a href="https://vk.com/id81751044" target="_blank"><img src="images/facebook.png" /></a>
+					<a href="https://ru-ru.facebook.com/juliya.melikova" target="_blank"><img src="images/facebook.png" /></a>
 					<a href="https://vk.com/id81751044" target="_blank"><img src="images/youtube.png" /></a>
 				</div>
 			</div>

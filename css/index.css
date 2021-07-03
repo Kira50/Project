@@ -23,27 +23,56 @@ img:hover {
 	height: 103px;
 	margin-bottom: -3px;
 }
-#yourcity {
-	display: none;
-}
-#yourcity > p {
-	float: right;
-	display: none;
+/* prompt */
+#prompt {
 	position: absolute;
+    box-sizing: border-box;
+    width: 230px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+	padding-bottom: 10px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+	margin-left: calc(100% - 240px);
+	display: none;
 }
-#yourcity > p:hover {
-	
+#text {
+	border-color: #f7e9eb;
+	border-radius: 10px;
 }
-.div-popup > button {
-	background-color: #e0c8c8;
-	color: #fff;
+#prompt-ok {
+	border-color: #f7e9eb;
+	border-radius: 10px;
+}
+/* popup city */
+#popup {
+    position: absolute;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+	padding-bottom: 10px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
+	margin-left: calc(100% - 210px);
+	display: none;
+}
+#popup > button {
+	background-color: #f7e9eb;
 	border-color: #fff;
+	border-radius: 10px;
+	box-shadow: 1px 2px 5px rgba(0,0,0,.4)
 }
-.div-popup > button:hover {
-	background-color: #fff;
-	color: #e0c8c8;
-	border-color: #e0c8c8;
+#popup > button:hover {
+	cursor: pointer;
+	background-color: #e0c8c8;
 }
+#city {
+	float: right;
+	padding-right: 5px;
+	display: none;
+}
+
 .midlheader {
 	background-color: #fff;
 	text-align: center;
@@ -102,6 +131,61 @@ main {
 	padding: 20px 20px;
     background: #fff;
 }
+/* slider  */
+.container {
+    width: 500px;
+    margin: 0 auto;
+    background: pink;
+}
+.slider {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+}
+.slide.active {
+    z-index: 1;
+}
+.slide img {
+    width: 500px;
+    height: 300px;
+}
+.rule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 2;
+}
+.slider:hover .rule {
+    display: block;
+}
+.rule span {
+    position: absolute;
+    top: calc(50% - 17px);
+    cursor: pointer; /* курсор показывает, что тут активный элемент */
+    user-select: none; /* запрещаем выделение текста - кнопка не "синеет", как по ней ни кликай*/
+    font-size: 30px;
+    width: 34px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+}
+.left {
+    left: 5%;
+}
+.right {
+    right: 5%;
+}
 
 /* footer */
 footer {
@@ -143,6 +227,13 @@ footer {
 	text-align: center;
 	text-shadow: 0 0 3px #e0c8c8;
 }
+.mail > a {
+	text-decoration: none;
+	color: #fff;
+}
+.mail > a:hover {
+	color: ##e0c8c8;
+}
 .contacts > div > a > img {
 	height: 42px;
 	padding-right: 10px;
@@ -150,4 +241,8 @@ footer {
 h5 {
 	color: #e0c8c8;
 	text-align: center;
+}
+.textmain::selection, h1::selection, p::selection, .tel::selection, .mail::selection, .infa > a::selection { /* Этот прием изменяет цвет при выделении */
+    color: #ef135d; /* Цвет текста  */
+    background: #e0c8c8; /* Цвет фона */
 }
