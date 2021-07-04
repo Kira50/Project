@@ -12,12 +12,12 @@ body {
 	background: #f7e9eb;
 }
 /* logo */
-img {
+#logo {
 	height: 100px;
 	padding-left: 10px;
 	border: 1px solid transparent;
 }
-img:hover {
+#logo:hover {
 	cursor: pointer;
 	height: 103px;
 	margin-bottom: -3px;
@@ -176,6 +176,12 @@ main {
 .myfoto1 {
 	float: right;
 	height: 400px;
+}
+.myfoto2 {
+	float: left;
+	height: 400px;
+	padding-right: 10px;
+	padding-top: 5px;
 }
 /* slider  */
 .container {
