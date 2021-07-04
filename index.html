@@ -19,6 +19,17 @@
 		<input type="text" id="text">
 		<button type="button" id="prompt-ok">OK</button>
 	</div>
+	<div id="zapis">
+		<div id="forma"><!--пока поменяла form на div (выскакивает alert)-->
+			<div class="brd">
+				<fieldset><h1>Укажите свои данные</h1></fieldset>
+				<fieldset><input type="text" placeholder="Ваше имя" name="Имя" /></fieldset>
+				<fieldset><input type="text" placeholder="Ваш Email" name="email" /></fieldset>
+				<fieldset><textarea placeholder="Введите сообщение(необязательное поле)" name="message"></textarea></fieldset>
+				<fieldset><button id="go" type="submit">Отправить</button></fieldset>
+			</div>
+		</div>
+	</div>
 	<header>
 		<div class="topheader">
 			<img src="images/logo.png" id="privet">
@@ -105,7 +116,7 @@
 				</div>
 			</div>
 			<div>
-				<button>Записаться на прием</button>
+				<button id="online">Записаться на прием</button>
 			</div>
 			<div class="contacts">
 				<div class="tel">+7 (495) 798-53-58</div>

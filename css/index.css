@@ -23,6 +23,44 @@ img:hover {
 	height: 103px;
 	margin-bottom: -3px;
 }
+/* forma zapisi */
+#zapis {
+	min-height: 1150px;/* Как привязать к высоте основного контейнера?*/
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.2);
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+.brd {
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 500px;
+	box-sizing: border-box;
+	background-color: #e0c8c8;
+	width: 350px;
+	height: 400px;
+	border-radius: 20px;
+	
+}
+fieldset {
+	border: none;
+	text-align: center;
+	
+}
+fieldset > textarea {
+	width: 100%;
+	
+}
+fieldset > textarea, input,  {
+	border-radius: 10px;
+	color: #fff;
+}
+fieldset > button > submit
+#forma {
+
+}
 /* prompt */
 #prompt {
 	position: absolute;
@@ -81,17 +119,19 @@ img:hover {
 	padding-bottom: 10px;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 .midlheader > a {
-	border: 1px solid #4a585f; 
+	border: 1px solid #714957; 
 	text-decoration: none;
 	color: #000;
 	border-radius: 10px;
 	padding-left: 5px;
 	padding-right: 5px;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 .midlheader > a:hover {
-	background-color: #4a585f;
+	background-color: #e0c8c8;
 	color: #fff;
 }
 .midlheader > span {
@@ -172,8 +212,8 @@ main {
 .rule span {
     position: absolute;
     top: calc(50% - 17px);
-    cursor: pointer; /* курсор показывает, что тут активный элемент */
-    user-select: none; /* запрещаем выделение текста - кнопка не "синеет", как по ней ни кликай*/
+    cursor: pointer; 
+    user-select: none;
     font-size: 30px;
     width: 34px;
     text-align: center;
@@ -191,6 +231,7 @@ main {
 footer {
 	background-color: #714957;
 	padding: 20px 10px 5px 10px;
+	flex: 1 1 auto;
 }
 .footer {
 	display: flex;
@@ -242,7 +283,7 @@ h5 {
 	color: #e0c8c8;
 	text-align: center;
 }
-.textmain::selection, h1::selection, p::selection, .tel::selection, .mail::selection, .infa > a::selection { /* Этот прием изменяет цвет при выделении */
-    color: #ef135d; /* Цвет текста  */
-    background: #e0c8c8; /* Цвет фона */
+.textmain::selection, h1::selection, p::selection, .tel::selection, .mail::selection, .infa > a::selection {
+    color: #ef135d; 
+    background: #e0c8c8; 
 }

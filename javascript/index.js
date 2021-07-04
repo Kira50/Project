@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function() { 
 	let today = new Date();
 	let hourNow = today.getHours();
 	let greeting;
-
+    //здесь идет приветсвие сайта
 	if(hourNow > 17) {
 		greeting = 'Добрый вечер, уважаемые владельцы животных, коллеги, студенты и аспиранты ветеринарных ВУЗов, на сайте вы найдете информацию по онкологии мелких домашних животных';
 	} else if(hourNow > 11) {
@@ -14,7 +14,7 @@ $(document).ready(function() {
 	} else {
 		greeting = 'Уважаемые владельцы животных, коллеги, студенты и аспиранты ветеринарных ВУЗов, на сайте вы найдете информацию по онкологии мелких домашних животных';
 	}
-	
+	//popup имитатор определения местоположения
 	$('.btn-yes').click(function() {
 		let e = document.getElementById('city');
 		e.style.display = 'block';
@@ -38,6 +38,14 @@ $(document).ready(function() {
 	setTimeout(function() {
 		document.getElementById('popup').style.display = 'block';
 	}, 1000);
+	
+	//добавляю обработчик события для кнопки записи
+	$('#online').click(function() {
+		document.getElementById('zapis').style.display = 'block';
+	});
+	$('#go').click(function() {
+		document.getElementById('zapis').style.display = 'none';
+	})
 });
 
 $(function(){
