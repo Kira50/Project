@@ -9,16 +9,6 @@
 	<script src="javascript/contacts.js"></script>
 </head>
 <body>
-	<div id="popup">
-        <p>Ваш город: Москва?</p>
-        <button type="button" class="btn-yes" id="sity">Да</button>
-        <button type="button" class="btn-no">Нет</button>
-    </div>
-	<div id="prompt">
-		<p>Введите Ваш город!</p>
-		<input type="text" id="text">
-		<button type="button" id="prompt-ok">OK</button>
-	</div>
 	<div id="zapis">
 		<div id="forma"><!--пока поменяла form на div (выскакивает alert)-->
 			<div class="brd">
@@ -32,8 +22,7 @@
 	</div>
 	<header>
 		<div class="topheader">
-			<img src="images/logo.png" id="privet">
-            <p id="city">Ваш город:</p>
+			<img src="images/logo.png" id="logo">
 		</div>
 		<div class="midlheader">
 			<a href="index.html" target="_blank">Главная</a>
@@ -73,7 +62,7 @@
 			</p>
 			<p>Перед ветклиникой есть городская платная парковка ( 40 р/час).</p>
 			<div class="map">
-			
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A553f7ff2c6538974fb40b4988a45127a7bfbc174530ece001ee53b1dd3b15485&amp;width=700&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 			</div>
 		</div>
 	</main>

@@ -60,56 +60,6 @@ fieldset > button > submit
 #forma {
 
 }
-/* prompt */
-#prompt {
-	position: absolute;
-    box-sizing: border-box;
-    width: 230px;
-    background-color: #fff;
-    text-align: center;
-    border-radius: 20px;
-	padding-bottom: 10px;
-	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
-	margin-left: calc(100% - 240px);
-	display: none;
-}
-#text {
-	border-color: #f7e9eb;
-	border-radius: 10px;
-}
-#prompt-ok {
-	border-color: #f7e9eb;
-	border-radius: 10px;
-}
-/* popup city */
-#popup {
-    position: absolute;
-    box-sizing: border-box;
-    width: 200px;
-    background-color: #fff;
-    text-align: center;
-    border-radius: 20px;
-	padding-bottom: 10px;
-	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
-	margin-left: calc(100% - 210px);
-	display: none;
-}
-#popup > button {
-	background-color: #f7e9eb;
-	border-color: #fff;
-	border-radius: 10px;
-	box-shadow: 1px 2px 5px rgba(0,0,0,.4)
-}
-#popup > button:hover {
-	cursor: pointer;
-	background-color: #e0c8c8;
-}
-#city {
-	float: right;
-	padding-right: 5px;
-	display: none;
-}
-
 .midlheader {
 	background-color: #fff;
 	text-align: center;
@@ -182,9 +132,6 @@ main {
 	padding: 20px aut;
     background: pink;
 }
-	
-
-
 /* footer */
 footer {
 	background-color: #714957;

@@ -260,6 +260,11 @@ footer {
 	text-decoration: none;
 	color: #e0c8c8;
 }
+div > a > img:hover {
+	cursor: pointer;
+	height: 103px;
+	margin-bottom: -3px;
+}
 .footer > div > button {
 	min-height: 50px;
 	width: 100%;

@@ -13,12 +13,12 @@ header {
 	height: 100%;
 	background: #f7e9eb;
 }
-img {
+.topheader > img {
 	height: 100px;
 	padding-left: 10px;
 	border: 1px solid transparent;
 }
-img:hover {
+.topheader > img:hover {
 	cursor: pointer;
 	height: 103px;
 	margin-bottom: -3px;
@@ -163,25 +163,20 @@ fieldset > button > submit
 }
 main {
 	background-image: url("../images/kleta.jpeg");
-}
-.content {
-	display: flex;
-	justify-content: space-around;
+	flex: 1 0 auto;
 }
 .textmain {
 	box-sizing: border-box;
-	width: 500px;
+	width: 900px;
 	height: 100%;
+	margin: 0 auto;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+	padding: 20px 20px;
     background: #fff;
-	border-radius: 20px;
 }
-.galery {
-	box-sizing: border-box;
-	width: 500px;
-	height: 700px;
-	box-shadow:  0 0 10px rgba(0,0,0,0.5);
-    background: #fff;
+.book {
+	float: right;
+	height: 300px;
 }
 #buy {
 	height: 30px;
@@ -190,16 +185,6 @@ main {
 	background-color: #714957;
 	color: #e0c8c8;
 	border-radius: 20px;
-}
-#counter {
-	height: 30px;
-	width: 120px;
-	float: right;
-	background-color: #714957;
-	color: #e0c8c8;
-	border-radius: 20px;
-	position: absolute;
-	display: none;
 }
 /* footer */
 footer {
