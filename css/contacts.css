@@ -173,71 +173,17 @@ main {
 	padding: 20px 20px;
     background: #fff;
 }
-.myfoto1 {
-	float: right;
+.map {
+	box-sizing: border-box;
+	width: 700px;
 	height: 400px;
-}
-.myfoto2 {
-	float: left;
-	height: 400px;
-	padding-right: 10px;
-	padding-top: 5px;
-}
-/* slider  */
-.container {
-    width: 500px;
-    margin: 0 auto;
+	margin: 0 auto;
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+	padding: 20px auto;
     background: pink;
 }
-.slider {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-}
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500px;
-    height: 300px;
-}
-.slide.active {
-    z-index: 1;
-}
-.slide img {
-    width: 500px;
-    height: 300px;
-}
-.rule {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    z-index: 2;
-}
-.slider:hover .rule {
-    display: block;
-}
-.rule span {
-    position: absolute;
-    top: calc(50% - 17px);
-    cursor: pointer; 
-    user-select: none;
-    font-size: 30px;
-    width: 34px;
-    text-align: center;
-    border-radius: 50%;
-    background: rgba(255,255,255,.5);
-}
-.left {
-    left: 5%;
-}
-.right {
-    right: 5%;
-}
+	
+
 
 /* footer */
 footer {
