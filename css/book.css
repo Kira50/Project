@@ -7,17 +7,18 @@ body {
 	font-family: Lora, sans-serif;
 	min-width: 320px;
 }
+header {
+}
 .topheader {
 	height: 100%;
 	background: #f7e9eb;
 }
-/* logo */
-#logo {
+img {
 	height: 100px;
 	padding-left: 10px;
 	border: 1px solid transparent;
 }
-#logo:hover {
+img:hover {
 	cursor: pointer;
 	height: 103px;
 	margin-bottom: -3px;
@@ -160,91 +161,51 @@ fieldset > button > submit
 	display: none;
 	text-align: center;
 }
-/* main */
 main {
 	background-image: url("../images/kleta.jpeg");
-	flex: 1 0 auto;
+}
+.content {
+	display: flex;
+	justify-content: space-around;
 }
 .textmain {
 	box-sizing: border-box;
-	width: 900px;
-	margin: 0 auto;
+	width: 500px;
+	height: 100%;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
-	padding: 20px 20px;
+    background: #fff;
+	border-radius: 20px;
+}
+.galery {
+	box-sizing: border-box;
+	width: 500px;
+	height: 700px;
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
     background: #fff;
 }
-.myfoto1 {
+#buy {
+	height: 30px;
+	width: 120px;
 	float: right;
-	height: 400px;
+	background-color: #714957;
+	color: #e0c8c8;
+	border-radius: 20px;
 }
-.myfoto2 {
-	float: left;
-	height: 400px;
-	padding-right: 10px;
-	padding-top: 5px;
+#counter {
+	height: 30px;
+	width: 120px;
+	float: right;
+	background-color: #714957;
+	color: #e0c8c8;
+	border-radius: 20px;
+	position: absolute;
+	display: none;
 }
-/* slider  */
-.container {
-    width: 500px;
-    margin: 0 auto;
-    background: pink;
-}
-.slider {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-}
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500px;
-    height: 300px;
-}
-.slide.active {
-    z-index: 1;
-}
-.slide img {
-    width: 500px;
-    height: 300px;
-}
-.rule {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    z-index: 2;
-}
-.slider:hover .rule {
-    display: block;
-}
-.rule span {
-    position: absolute;
-    top: calc(50% - 17px);
-    cursor: pointer; 
-    user-select: none;
-    font-size: 30px;
-    width: 34px;
-    text-align: center;
-    border-radius: 50%;
-    background: rgba(255,255,255,.5);
-}
-.left {
-    left: 5%;
-}
-.right {
-    right: 5%;
-}
-
 /* footer */
 footer {
 	background-color: #714957;
 	padding: 20px 10px 5px 10px;
-	flex: 0 0 auto;
-
+	flex: 1 1 auto;
 }
 .footer {
 	display: flex;
@@ -296,7 +257,7 @@ h5 {
 	color: #e0c8c8;
 	text-align: center;
 }
-.textmain::selection, h1::selection, p::selection, .tel::selection, .mail::selection, .infa > a::selection, li::selection {
+.textmain::selection, h1::selection, p::selection, .tel::selection, .mail::selection, .infa > a::selection {
     color: #ef135d; 
     background: #e0c8c8; 
 }
