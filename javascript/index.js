@@ -23,7 +23,7 @@ $(document).ready(function() {
 	});
 	$('.btn-no').click(function() {
 		let e = document.getElementById('city');
-		e.style.display = 'block';
+		e.style.display = 'block'; //e.style = 'display:block'; это то же самое!
 		document.getElementById('popup').style.display = 'none';
 		document.getElementById('prompt').style.display = 'block';
 	});
