@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap');
-html (
+html {
 	height: 100%;
-)
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -118,16 +118,19 @@ fieldset > button > submit
 }
 
 .midlheader {
+	display: flex;
+	justify-content: center;
 	background-color: #fff;
-	text-align: center;
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: auto;
+	padding-right: auto;
 	position: sticky;
 	top: 0;
 	z-index: 1;
 }
-.midlheader > a {
+.midlheader > div > a {
 	border: 1px solid #714957; 
 	text-decoration: none;
 	color: #000;
@@ -136,20 +139,29 @@ fieldset > button > submit
 	padding-right: 5px;
 	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
-.midlheader > a:hover {
+.midlheader > div > a:hover {
 	background-color: #e0c8c8;
 	color: #fff;
 }
-.midlheader > span {
-	display: none;
+#pulldown {
+	display: grid;
 	position: absolute;
-	top: 20px;
-	left: 0;
-	padding: 20px 0 5px;
-	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
 }
-.midlheader > span:hover {
+#pulldown > a {
+	border: 1px solid #714957; 
+	text-decoration: none;
+	background-color: #fff;
+	text-align: center;
+	color: #000;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+#pulldown > a:hover {
 	display: block;
+	background-color: #e0c8c8;
+	color: #fff;
 }
 .bottomheader {
 	background: #e0c8c8;
