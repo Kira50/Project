@@ -43,7 +43,7 @@ function InitFirstPage() {
 		document.getElementById('zapis').style.display = 'none';
 	})
 }
-
+/* NavMenu */
 $(document).ready(function() {
 	$('#pulldown').hide();
 	$('#nav').hover(

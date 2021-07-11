@@ -9,6 +9,9 @@ body {
 	width: 100%;
 	font-family: Lora, sans-serif;
 	min-width: 320px;
+	min-height: 100%;
+    flex-direction: column;
+    display: flex;
 }
 header {
 	flex: none;;
@@ -17,30 +20,29 @@ header {
 	height: 100%;
 	background: #f7e9eb;
 }
-.topheader > img {
+.topheader > a > img {
 	height: 100px;
 	padding-left: 10px;
 	border: 1px solid transparent;
 }
-.topheader > img:hover {
+.topheader > a > img:hover {
 	cursor: pointer;
 	height: 103px;
 	margin-bottom: -3px;
 }
 /* forma zapisi */
 #zapis {
-	min-height: 1150px;/* Как привязать к высоте основного контейнера?*/
-	height: 100%;
 	width: 100%;
 	background-color: rgba(0,0,0,.2);
 	position: absolute;
 	z-index: 2;
 	display: none;
+	flex: 1 0 auto;
 }
 .brd {
 	margin-left: auto;
     margin-right: auto;
-	margin-top: 500px;
+	margin-top: 30%;
 	box-sizing: border-box;
 	background-color: #e0c8c8;
 	width: 350px;
@@ -59,7 +61,6 @@ fieldset > textarea {
 }
 fieldset > textarea, input {
 	border-radius: 10px;
-	color: #fff;
 }
 /* prompt */
 #prompt {
@@ -189,11 +190,12 @@ main {
 }
 .textmain {
 	box-sizing: border-box;
-	width: 900px;
-	margin: 0 auto;
+	min-width: 360px;
+	margin: 0 200px;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
 	padding: 20px 20px;
     background: #fff;
+	
 }
 .myfoto1 {
 	float: right;
@@ -204,6 +206,25 @@ main {
 	height: 400px;
 	padding-right: 10px;
 	padding-top: 5px;
+}
+.richard_history,  .egor_history, .ariya_history, .dusya_history {
+	display: none;
+	box-sizing: border-box;
+	border-radius: 10px;
+	min-width: 360px;
+	margin: 10px 20px;
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+	padding: 20px 20px;
+    background: #fff;
+}
+.clinic_foto{
+	height: 300px;
+	float: right;
+	border-radius:10px;
+}
+#richard:hover, #egor:hover, #ariya:hover, #dusya:hover  {
+	color: #714957;
+	cursor: pointer;
 }
 /* slider  */
 .container {
@@ -260,6 +281,16 @@ main {
 .right {
     right: 5%;
 }
+/* map */
+.map {
+	box-sizing: border-box;
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+	padding: 20px auto;
+	background-color: pink;
+}
 
 /* footer */
 footer {
@@ -296,8 +327,9 @@ footer {
 	color: #e0c8c8;
 	cursor: pointer;
 }
-.contacts > .tel, .contacts > .mail {
+.contacts > .tel > a, .contacts > .mail {
 	color: #fff;
+	text-decoration: none;
 	font-size: 2em;
 	text-align: center;
 	text-shadow: 0 0 3px #e0c8c8;
@@ -306,7 +338,7 @@ footer {
 	text-decoration: none;
 	color: #fff;
 }
-.mail > a:hover {
+.mail > a:hover, .tel > a:hover { /* hover не работает на ссылках типа тел и мейл? */
 	color: ##e0c8c8;
 }
 .contacts > div > a > img {
@@ -317,7 +349,100 @@ h5 {
 	color: #e0c8c8;
 	text-align: center;
 }
-.textmain::selection, h1::selection, p::selection, .tel::selection, .mail::selection, .infa > a::selection {
+.textmain::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, 
+	a::selection, .tel::selection, .mail::selection, img::selection, br::selection, 
+	ol::selection, ul::selection, il::selection, ol > li::selection, ul > li::selection, b::selection, button::selection{
     color: #ef135d; 
     background: #e0c8c8; 
+}
+/* Galery */
+#big {
+	display: none;	
+}
+#medium {
+	box-sizing: border-box;
+	width: fit-content;
+	border-color: #ef135d;
+	border-radius: 10px;
+	padding: 10px 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+#medium:hover {
+	cursor: pointer;
+}
+.small {
+	display: inline-flex;
+	
+}
+.small > div {
+	box-sizing: border-box;
+	width: fit-content;
+	border-color: #ef135d;
+	border-radius: 10px;
+	padding: 10px 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin-right: 10px;
+}
+.small:hover {
+	cursor: pointer;
+}
+.small > button {
+	margin-top: auto;
+	margin-bottom: 10px;
+	margin-left: 40px;
+	height: 30px;
+	width: 250px;
+	border-radius: 20px;
+	background-color: #e0c8c8;
+	color: #714957;
+	cursor: pointer;
+	font-family: Lora, sans-serif;
+}
+.small > button:hover {
+	background-color: #714957;
+	color: #e0c8c8;
+	cursor: pointer;
+}
+
+
+
+/* product */
+.product {
+	width: 100%;
+}
+.gallery-desk {
+	width: 530px;
+	float: left;
+}
+.main-image {
+	padding: 24px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 25px;
+}
+.gallery-desk img {
+	cursor: zoom-in;
+}
+.gallery {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.small-image {
+	width: 170px;
+	height: 170px;
+	padding: 4px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+.small-image > img {
+	max-height: 160px;
+	max-width: 160px;
+}
+.description-desk {
+	margin-left: 540px;
 }
