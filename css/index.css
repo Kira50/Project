@@ -14,7 +14,7 @@ body {
     display: flex;
 }
 header {
-	flex: none;;
+	flex: none;
 }
 .topheader {
 	height: 100%;
@@ -190,12 +190,36 @@ main {
 }
 .textmain {
 	box-sizing: border-box;
-	min-width: 360px;
+	min-width: 540px;
+	width: auto;
 	margin: 0 200px;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
-	padding: 20px 20px;
+	padding: 20px;
     background: #fff;
-	
+}
+.textmain > div > button {
+	min-height: 30px;
+	width: 200px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: Lora, cursive;
+	color: #714957;
+	background-color: #e0c8c8;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.textmain > div > button:hover {
+	background-color: #714957;
+	color: #e0c8c8;
+	cursor: pointer;
+}
+}
+.description {
+	display: flex;
+}
+.textmain > h1 {
+	text-align: center;
 }
 .myfoto1 {
 	float: right;
@@ -207,7 +231,7 @@ main {
 	padding-right: 10px;
 	padding-top: 5px;
 }
-.richard_history,  .egor_history, .ariya_history, .dusya_history, .marsik_history {
+.richard_history,  .egor_history, .ariya_history, .dusya_history, .marsik_history, .danya_history{
 	display: none;
 	box-sizing: border-box;
 	border-radius: 10px;
@@ -222,18 +246,15 @@ main {
 	float: right;
 	border-radius:10px;
 }
-#richard:hover, #egor:hover, #ariya:hover, #dusya:hover, #marsik:hover  {
+#richard:hover, #egor:hover, #ariya:hover, #dusya:hover, #marsik:hover, #danya:hover  {
 	color: #714957;
 	cursor: pointer;
 }
 /* slider  */
-.container {
-    width: 500px;
-    margin: 0 auto;
-    background: pink;
-}
+
 .slider {
     position: relative;
+	margin: 0 auto;
     width: 500px;
     height: 300px;
     overflow: hidden;
@@ -284,8 +305,6 @@ main {
 /* map */
 .map {
 	box-sizing: border-box;
-	width: 700px;
-	height: 400px;
 	margin: 0 auto;
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
 	padding: 20px auto;
@@ -331,7 +350,6 @@ footer {
 	color: #fff;
 	text-decoration: none;
 	font-size: 2em;
-	text-align: center;
 	text-shadow: 0 0 3px #e0c8c8;
 }
 .mail > a {
@@ -358,13 +376,24 @@ h5 {
 /* Galery */
 #big {
 	display: none;	
+	position: absolute;
+	box-sizing: border-box;
+	width: fit-content;
+	border-color: #ef135d;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin: 15px;
+}
+#big:hover {
+	cursor: zoom-in;
 }
 #medium {
 	box-sizing: border-box;
 	width: fit-content;
 	border-color: #ef135d;
 	border-radius: 10px;
-	padding: 10px 10px;
+	padding: 10px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	margin-bottom: 15px;
 	margin-top: 10px;
@@ -408,21 +437,40 @@ h5 {
 }
 
 /* different screens */
-@media (min-width: 320px) {
-	/* .midlheader {
-		display: inline-table;
-		align-items: center;
-	}*/
+@media (max-width: 960px) {
+	.textmain {
+		width: 540px;
+		margin: 0 auto;
+	}
 }
-@media (min-width: 768px) {
-
-}
-@media (min-width: 992px) {
-
-}
-@media (min-width: 1200px) {
-
-}
-@media (min-width: 1600px) {
-
+@media (max-width: 760px) {
+	.midlheader {
+		display: block;
+		text-align: center;
+	}
+	.midlheader > div {
+		margin-bottom: 5px;
+	}
+	#pulldown {
+		position: relative
+	}
+	.footer {
+		gap: 20px;
+	}
+	.infa > div {
+		margin-bottom: 15px;
+	}
+	.infa > div > a {
+		font-size: 15px;
+	}
+	.contacts > .tel > a, .contacts > .mail {
+		font-size: 15px;
+	}
+	.contacts > div > a {
+		display: grid;
+		height: 36px;
+	}
+	h5 {
+		font-size: x-small;
+	}
 }
