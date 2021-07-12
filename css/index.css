@@ -207,7 +207,7 @@ main {
 	padding-right: 10px;
 	padding-top: 5px;
 }
-.richard_history,  .egor_history, .ariya_history, .dusya_history {
+.richard_history,  .egor_history, .ariya_history, .dusya_history, .marsik_history {
 	display: none;
 	box-sizing: border-box;
 	border-radius: 10px;
@@ -222,7 +222,7 @@ main {
 	float: right;
 	border-radius:10px;
 }
-#richard:hover, #egor:hover, #ariya:hover, #dusya:hover  {
+#richard:hover, #egor:hover, #ariya:hover, #dusya:hover, #marsik:hover  {
 	color: #714957;
 	cursor: pointer;
 }
@@ -371,7 +371,7 @@ h5 {
 	margin-left: 30px;
 }
 #medium:hover {
-	cursor: pointer;
+	cursor: zoom-in;
 }
 .small {
 	display: inline-flex;
@@ -387,7 +387,7 @@ h5 {
 	margin-right: 10px;
 }
 .small:hover {
-	cursor: pointer;
+	cursor: zoom-in;
 }
 .small > button {
 	margin-top: auto;
@@ -407,42 +407,39 @@ h5 {
 	cursor: pointer;
 }
 
-
-
-/* product */
-.product {
-	width: 100%;
+/* different screens */
+@media (min-width: 576px) {
+	.cat-blocks {
+		gap: 32px;
+	}
+	.catalog {
+		gap: 16px;
+	}
 }
-.gallery-desk {
-	width: 530px;
-	float: left;
+@media (min-width: 768px) {
+	.textmain {
+		gap: 4px;
+	}
+	 {
+		display: block;
+		width: 160px;
+	}
 }
-.main-image {
-	padding: 24px;
-	background: #fff;
-	border: 1px solid #000;
-	border-radius: 25px;
+@media (min-width: 992px) {
+	.cat-blocks {
+		gap: 10px;
+	}
+	aside {
+		width: 260px;
+	}
 }
-.gallery-desk img {
-	cursor: zoom-in;
+@media (min-width: 1200px) {
+	.cat-blocks {
+		gap: 22px;
+	}
 }
-.gallery {
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-between;
-}
-.small-image {
-	width: 170px;
-	height: 170px;
-	padding: 4px;
-	background: #fff;
-	border: 1px solid #000;
-	border-radius: 5px;
-}
-.small-image > img {
-	max-height: 160px;
-	max-width: 160px;
-}
-.description-desk {
-	margin-left: 540px;
+@media (min-width: 1400px) {
+	.cat-blocks {
+		gap: 14px;
+	}
 }
