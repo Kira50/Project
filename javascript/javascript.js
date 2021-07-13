@@ -71,3 +71,18 @@ $(document).ready(function() {
 		document.getElementById('zapis').style.display = 'none';
 	});
 });
+
+
+$(document).ready(function() {
+	$('#buy').click(function() {
+		let e = document.getElementById('zapis');
+		e.style.display = 'block';
+		e.scrollIntoView();
+	});
+	$('#go').click(function() {
+		document.getElementById('zapis').style.display = 'none';
+	});
+	$('#exit').click(function() {
+		document.getElementById('zapis').style.display = 'none';
+	});
+});
