@@ -474,3 +474,33 @@ h5 {
 		font-size: x-small;
 	}
 }
+@media (max-width: 590px) {
+	main {
+		background-image: none;
+	}
+	textmain {
+		box-sizing: none;
+	}
+	.slider,
+	.slide,
+	.slide img {
+		width: 300px;
+	}
+	.textmain {
+	min-width: 360px;
+	width: auto;
+	}
+	.footer {
+		display: block;
+		font-size: 10px;
+		text-align: center;
+	}
+	.footer > div > button {
+		width: 130px;
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+	.myfoto2 {
+		display: none;
+	}
+}
