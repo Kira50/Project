@@ -30,10 +30,12 @@ header {
 	height: 103px;
 	margin-bottom: -3px;
 }
+.hamburger {
+		display: none;
+	}
 /* forma zapisi */
 #zapis {
 	width: 100%;
-	background-color: rgba(0,0,0,.2);
 	position: absolute;
 	z-index: 2;
 	display: none;
@@ -444,31 +446,50 @@ h5 {
 	}
 }
 @media (max-width: 760px) {
-	.midlheader {
+	.hamburger {
 		display: block;
-		text-align: center;
+		float: left;
+		height: 70px;
 	}
+	.hamburger > img:hover {
+		cursor: pointer;
+		height: 73px;
+		margin-bottom: -3px;
+		margin-left: -3px;
+	}
+	.topheader {
+		display: flex;
+		justify-content: space-between;
+	}
+	.topheader > a > img {
+		height: 70px;
+		border: 1px solid transparent;
+	}
+	.topheader > a > img:hover {
+		cursor: pointer;
+		height: 73px;
+		margin-bottom: -3px;
+	}
+	.topheader > p {
+		font-size: x-small;
+	}
+	.midlheader {
+		display: none;
+		
+	}  
 	.midlheader > div {
 		margin-bottom: 5px;
 	}
-	#pulldown {
-		position: relative
-	}
 	.footer {
-		gap: 20px;
+		display: block;
+		text-align: center;
 	}
-	.infa > div {
-		margin-bottom: 15px;
+	.footer > div > button {
+		width: max-content;
+		margin-bottom: 20px;
 	}
-	.infa > div > a {
-		font-size: 15px;
-	}
-	.contacts > .tel > a, .contacts > .mail {
-		font-size: 15px;
-	}
-	.contacts > div > a {
-		display: grid;
-		height: 36px;
+	.infa {
+		margin-bottom: 20px;
 	}
 	h5 {
 		font-size: x-small;
@@ -498,7 +519,7 @@ h5 {
 	.footer > div > button {
 		width: 130px;
 		font-size: 15px;
-		margin-bottom: 5px;
+		margin-bottom: 20px;
 	}
 	.myfoto2 {
 		display: none;

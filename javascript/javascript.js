@@ -35,9 +35,12 @@ function InitFirstPage() {
 	$('#pre').text( greeting );
 	$('#pre').fadeIn(5000);
 	
+	/* Button Form */
 	//добавляю обработчик события для кнопки записи
 	$('#online').click(function() {
-		document.getElementById('zapis').style.display = 'block';
+		let e = document.getElementById('zapis');
+		e.style.display = 'block';
+		e.scrollIntoView();
 	});
 	$('#go').click(function() {
 		document.getElementById('zapis').style.display = 'none';
@@ -49,5 +52,12 @@ $(document).ready(function() {
 	$('#nav').hover(
 		function(){
 			$('#pulldown').slideToggle(300);
+	});
+});
+/* Hamburger */
+$(document).ready(function() {
+	$('#hamburger').click(function() {
+		let e = document.getElementById('midlheader');
+		e.style.display = 'block';
 	});
 });
