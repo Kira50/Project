@@ -16,38 +16,23 @@ function InitFirstPage() {
 	//popup имитатор определения местоположения
 	$('.btn-yes').click(function() {
 		let e = document.getElementById('city');
-		e.style.display = 'block';
+		e.style.visibility = 'visible';
 		e.innerText = e.innerText + ' Москва';
 		document.getElementById('popup').style.display = 'none';
 	});
 	$('.btn-no').click(function() {
 		let e = document.getElementById('city');
-		e.style.display = 'block'; //e.style = 'display:block'; это то же самое!
 		document.getElementById('popup').style.display = 'none';
 		document.getElementById('prompt').style.display = 'block';
 	});
 	$('#prompt-ok').click(function() {
 		document.getElementById('prompt').style.display = 'none';
 		let e = document.getElementById('city');
-		e.style.display = 'block';
+		e.style.visibility = 'visible';
 		e.innerText = e.innerText + ' ' + document.getElementById('text').value;
 	});
 	$('#pre').text( greeting );
 	$('#pre').fadeIn(5000);
-	
-	/* Button Form */
-	//добавляю обработчик события для кнопки записи
-	$('#online').click(function() {
-		let e = document.getElementById('zapis');
-		e.style.display = 'block';
-		e.scrollIntoView();
-	});
-	$('#go').click(function() {
-		document.getElementById('zapis').style.display = 'none';
-	});
-	$('#exit').click(function() {
-		document.getElementById('zapis').style.display = 'none';
-	})
 }
 /* NavMenu */
 $(document).ready(function() {
@@ -59,8 +44,30 @@ $(document).ready(function() {
 });
 /* Hamburger */
 $(document).ready(function() {
+	let state = true;
 	$('#hamburger').click(function() {
 		let e = document.getElementById('midlheader');
+		e.style.display = state ? 'block' : 'none';
+		state = !state;
+	});
+	$(window).resize(function(){
+		let e = $('#midlheader');
+		($(window).width() > 760) && e.attr('style') && e.removeAttr('style');
+	});
+});
+
+/* Button Form */
+//добавляю обработчик события для кнопки записи
+$(document).ready(function() {
+	$('#online').click(function() {
+		let e = document.getElementById('zapis');
 		e.style.display = 'block';
+		e.scrollIntoView();
+	});
+	$('#go').click(function() {
+		document.getElementById('zapis').style.display = 'none';
+	});
+	$('#exit').click(function() {
+		document.getElementById('zapis').style.display = 'none';
 	});
 });

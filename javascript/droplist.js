@@ -5,10 +5,10 @@ function historyHandler(name) {
 	$(className).slideToggle(400);
 	let str = $(idName).text();
 	let last = str.slice(-1);
-	if(last== 'ᗐ') {
-		last = 'ᗑ';
+	if(last== '⮛') {
+		last = '⮙';
 	} else {
-		last = 'ᗐ';
+		last = '⮛';
 	}
 	str = str.slice(0, -1) + last;
 	$(idName).text(str);

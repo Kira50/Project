@@ -14,12 +14,17 @@
 <body>
 	<header>
 		<div class="topheader">
+			<div class="container">
+				<div class="hamburger" id="hamburger">
+					<img src="images/hamburger.png">
+				</div>
+			</div>
 			<a href="index.html">
 				<img src="images/logo.png" id="logo">
 			</a>
             <p id="city">📍Ваш город: Москва</p>
 		</div>
-		<div class="midlheader">
+		<div id="midlheader">
 			<div><a href="index.html" target="_blank">Главная</a></div>
 			<div><a href="aboutme.html" target="_blank">Обо мне</a></div>
 			<div><a href="clinic.html" target="_blank">Мои пациенты</a></div>
@@ -126,14 +131,14 @@
 		</div>
 		<h5>&#169 Москва 2021г. Полное или частичное копирование материалов c сайта разрешено только с прямой гиперссылкой на первоисточник</h5>
 	</footer>
-	<div id="zapis">
+		<div id="zapis">
 		<div id="forma">
 			<div class="brd">
 				<button id="exit">✘</button>
 				<fieldset><h2>Укажите свои данные</h2></fieldset>
-				<fieldset><input type="text" placeholder="Ваше имя" name="Имя" /></fieldset>
-				<fieldset><input type="text" placeholder="Ваш Email" name="email" /></fieldset>
-				<fieldset><textarea placeholder="Введите сообщение(необязательное поле)" name="message"></textarea></fieldset>
+				<fieldset><input id="line" type="text" placeholder="Ваше имя" name="Имя" /></fieldset>
+				<fieldset><input id="line" type="text" placeholder="Ваш Email" name="email" /></fieldset>
+				<fieldset><textarea id="enter" placeholder="Введите сообщение(необязательное поле)" name="message"></textarea></fieldset>
 				<fieldset><button id="go" type="submit">Отправить</button></fieldset>
 			</div>
 		</div>

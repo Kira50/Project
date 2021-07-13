@@ -80,11 +80,12 @@ fieldset {
 	color: #e0c8c8;
 	cursor: pointer;
 }
-fieldset > textarea {
+#line {
 	width: 100%;
-	
+	height: 20px;
+	border-radius: 10px;
 }
-fieldset > textarea, input {
+#enter {
 	border-radius: 10px;
 	width: 100%;
 }
@@ -135,7 +136,8 @@ fieldset > textarea, input {
 #city {
 	float: right;
 	padding-right: 5px;
-	display: none;
+	visibility: hidden;
+	width: 100px;
 }
 /* city forever */
 #forever {
@@ -143,7 +145,7 @@ fieldset > textarea, input {
 	padding-right: 5px;
 	display: block;
 }
-.midlheader {
+#midlheader {
 	display: flex;
 	justify-content: center;
 	background-color: #fff;
@@ -156,7 +158,7 @@ fieldset > textarea, input {
 	top: 0;
 	z-index: 1;
 }
-.midlheader > div > a {
+#midlheader > div > a {
 	border: 1px solid #714957; 
 	text-decoration: none;
 	color: #000;
@@ -166,7 +168,7 @@ fieldset > textarea, input {
 	padding-right: 5px;
 	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
-.midlheader > div > a:hover {
+#midlheader > div > a:hover {
 	background-color: #e0c8c8;
 	color: #fff;
 }
@@ -214,6 +216,13 @@ main {
 	background-image: url("../images/cell.jpeg");
 	flex: 1 0 auto;
 }
+.vid {
+	align-items: center;
+}
+.textmain > iframe {
+	max-height: 500px;
+	margin: 0 auto;
+}
 .textmain {
 	box-sizing: border-box;
 	min-width: 540px;
@@ -248,7 +257,7 @@ main {
 }
 .myfoto1 {
 	float: right;
-	height: 400px;
+	height: 500px;
 }
 .myfoto2 {
 	float: left;
@@ -415,8 +424,7 @@ h5 {
 }
 
 div > #big > img {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 30%;
 	border-radius:20px;
 }
 #medium {
@@ -473,6 +481,19 @@ div > #big > img {
 		width: 540px;
 		margin: 0 auto;
 	}
+	#midlheader {
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: auto;
+	padding-right: auto;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	}
 }
 @media (max-width: 760px) {
 	.hamburger {
@@ -502,12 +523,18 @@ div > #big > img {
 	.topheader > p {
 		font-size: x-small;
 	}
-	.midlheader {
+	#midlheader {
 		display: none;
-		
+		position: absolute;
+		top: 70px;
+		left: 5px;
+		background: transparent;
 	}  
-	.midlheader > div {
+	#midlheader > div {
 		margin-bottom: 5px;
+	}
+	#midlheader > div > a {
+		background: #fff;
 	}
 	.footer {
 		display: block;
@@ -537,8 +564,8 @@ div > #big > img {
 		width: 300px;
 	}
 	.textmain {
-	min-width: 360px;
-	width: auto;
+		min-width: 360px;
+		width: auto;
 	}
 	.footer {
 		display: block;
@@ -563,5 +590,9 @@ div > #big > img {
 	}
 	.small {
 		display: block;
+	}
+	.vid {
+		min-width: 360px;
+		width: auto;
 	}
 }
