@@ -44,6 +44,9 @@ function InitFirstPage() {
 	});
 	$('#go').click(function() {
 		document.getElementById('zapis').style.display = 'none';
+	});
+	$('#exit').click(function() {
+		document.getElementById('zapis').style.display = 'none';
 	})
 }
 /* NavMenu */

@@ -36,15 +36,17 @@ header {
 /* forma zapisi */
 #zapis {
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	z-index: 2;
 	display: none;
-	flex: 1 0 auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .5);
 }
 .brd {
-	margin-left: auto;
-    margin-right: auto;
-	margin-top: 30%;
+	margin: 0 auto;
 	box-sizing: border-box;
 	background-color: #e0c8c8;
 	width: 350px;
@@ -52,10 +54,31 @@ header {
 	border-radius: 20px;
 	
 }
+#exit {
+	margin: 20px 300px;
+	border-radius: 30px;
+	background-color: #ffe6ef;
+	border-color: #e0c8c8;
+}
 fieldset {
 	border: none;
 	text-align: center;
 	
+}
+#go {
+	min-height: 50px;
+	width: 100%;
+	border-radius: 20px;
+	font-size: 20px;
+	font-family: Lora, cursive;
+	color: #714957;
+	background-color: #e0c8c8;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#go:hover {
+	background-color: #714957;
+	color: #e0c8c8;
+	cursor: pointer;
 }
 fieldset > textarea {
 	width: 100%;
@@ -63,6 +86,7 @@ fieldset > textarea {
 }
 fieldset > textarea, input {
 	border-radius: 10px;
+	width: 100%;
 }
 /* prompt */
 #prompt {
@@ -216,8 +240,7 @@ main {
 	color: #e0c8c8;
 	cursor: pointer;
 }
-}
-.description {
+.textmain > .description {
 	display: flex;
 }
 .textmain > h1 {
@@ -378,17 +401,23 @@ h5 {
 /* Galery */
 #big {
 	display: none;	
-	position: absolute;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .5);
 	box-sizing: border-box;
-	width: fit-content;
 	border-color: #ef135d;
 	border-radius: 10px;
-	padding: 10px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	margin: 15px;
 }
-#big:hover {
-	cursor: zoom-in;
+
+div > #big > img {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:20px;
 }
 #medium {
 	box-sizing: border-box;
@@ -523,5 +552,16 @@ h5 {
 	}
 	.myfoto2 {
 		display: none;
+	}
+	#medium {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.small > div {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.small {
+		display: block;
 	}
 }

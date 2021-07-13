@@ -27,17 +27,6 @@
 		<input type="text" id="text">
 		<button type="button" id="prompt-ok">OK</button>
 	</div>
-	<div id="zapis">
-		<div id="forma"><!--пока поменяла form на div (выскакивает alert)-->
-			<div class="brd">
-				<fieldset><h1>Укажите свои данные</h1></fieldset>
-				<fieldset><input type="text" placeholder="Ваше имя" name="Имя" /></fieldset>
-				<fieldset><input type="text" placeholder="Ваш Email" name="email" /></fieldset>
-				<fieldset><textarea placeholder="Введите сообщение(необязательное поле)" name="message"></textarea></fieldset>
-				<fieldset><button id="go" type="submit">Отправить</button></fieldset>
-			</div>
-		</div>
-	</div>
 	<header>
 		<div class="topheader">
 			<div class="container">
@@ -179,5 +168,17 @@
 		</div>
 		<h5>&#169 Москва 2021г. Полное или частичное копирование материалов c сайта разрешено только с прямой гиперссылкой на первоисточник</h5>
 	</footer>
+	<div id="zapis">
+		<div id="forma">
+			<div class="brd">
+				<button id="exit">✘</button>
+				<fieldset><h2>Укажите свои данные</h2></fieldset>
+				<fieldset><input type="text" placeholder="Ваше имя" name="Имя" /></fieldset>
+				<fieldset><input type="text" placeholder="Ваш Email" name="email" /></fieldset>
+				<fieldset><textarea placeholder="Введите сообщение(необязательное поле)" name="message"></textarea></fieldset>
+				<fieldset><button id="go" type="submit">Отправить</button></fieldset>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
