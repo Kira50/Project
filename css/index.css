@@ -218,6 +218,9 @@ main {
 }
 .vid {
 	align-items: center;
+	margin-left: 60px;
+	margin-right: 60px;
+
 }
 .textmain > iframe {
 	max-height: 500px;
@@ -502,7 +505,6 @@ div > #big > img {
 	}
 	.myfoto2 {
 		height: 680px;
-		float: none;
 		padding: 5px;
 	}
 
@@ -611,5 +613,9 @@ div > #big > img {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.vid {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
