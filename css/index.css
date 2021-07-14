@@ -476,24 +476,36 @@ div > #big > img {
 }
 
 /* different screens */
-@media (max-width: 960px) {
+@media (max-width: 990px) {
 	.textmain {
 		width: 540px;
 		margin: 0 auto;
 	}
 	#midlheader {
-	display: flex;
-	justify-content: center;
-	background-color: #fff;
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: auto;
-	padding-right: auto;
-	position: sticky;
-	top: 0;
-	z-index: 1;
+		display: flex;
+		justify-content: center;
+		background-color: #fff;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: auto;
+		padding-right: auto;
+		position: sticky;
+		top: 0;
+		z-index: 1;
 	}
+	.myfoto1 {
+		height: 600px;	
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.myfoto2 {
+		height: 680px;
+		float: none;
+		padding: 5px;
+	}
+
 }
 @media (max-width: 760px) {
 	.hamburger {
@@ -590,5 +602,14 @@ div > #big > img {
 	.vid {
 		min-width: 360px;
 		width: auto;
+	}
+	.myfoto2 {
+		display: none;
+	}
+	.myfoto1 {
+		height: 500px;	
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
